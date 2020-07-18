@@ -17,3 +17,5 @@ Here are some ideas to get you started:
 
 - 🌱 I’m currently learning C/C++ & Java
 - ⚡ Target: Catch up with wall of subway station :)
+
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=Zxilly)](https://github.com/anuraghazra/github-readme-stats)
