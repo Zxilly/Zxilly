@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🌱 I’m currently using C/C++ & Java
+- 🌱 I’m currently using C/C++, Python & Java
 - ⚡ Target: Catch up with wall of subway station :)
 
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=Zxilly)](https://github.com/anuraghazra/github-readme-stats)
