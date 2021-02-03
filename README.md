@@ -18,6 +18,8 @@ Here are some ideas to get you started:
 - 🌱 I’m currently using C/C++, Python & Java
 - ⚡ Target: Catch up with the wall of subway station :)
 
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Zxilly&hide=html,css&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=Zxilly)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Zxilly&hide=html,css&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
