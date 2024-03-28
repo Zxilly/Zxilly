@@ -1,0 +1,43 @@
+name: Daily Task
+
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+jobs:
+  at:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Generate
+        uses: Zxilly/animated-timeline@master
+        with:
+          output: 'assets/animation.gif'
+          type: 'gif'
+          login: 'Zxilly'
+      
+      - name: Commit
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          # check if there are any changes
+          if [[ -n $(git status --porcelain) ]]; then
+            git add .
+            git commit -m "chore: generate fall" -m "[skip ci]"
+            git push
+          else
+            echo "::notice::Files are up to date."
+          fi
+          
+  waka:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Update gist
+      uses: matchai/waka-box@master
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GIST_ID: 40fabe4fbc612208eee108087d745c49
+        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
