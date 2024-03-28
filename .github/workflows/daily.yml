@@ -15,22 +15,15 @@ jobs:
       - name: Generate
         uses: Zxilly/animated-timeline@master
         with:
-          output: 'assets/animation.gif'
+          output: 'animation.gif'
           type: 'gif'
           login: 'Zxilly'
       
       - name: Commit
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          # check if there are any changes
-          if [[ -n $(git status --porcelain) ]]; then
-            git add .
-            git commit -m "chore: generate fall" -m "[skip ci]"
-            git push
-          else
-            echo "::notice::Files are up to date."
-          fi
+          curl -H "Authorization: $TOKEN" -T animation.gif https://image.zxilly.dev/falldown.gif
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
           
   waka:
     runs-on: ubuntu-latest
