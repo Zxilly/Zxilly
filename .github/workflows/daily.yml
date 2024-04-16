@@ -15,13 +15,13 @@ jobs:
       - name: Generate
         uses: Zxilly/animated-timeline@master
         with:
-          output: 'animation.gif'
-          type: 'gif'
+          output: 'falldown.webp'
+          type: 'webp'
           login: 'Zxilly'
       
       - name: Commit
         run: |
-          curl -H "Authorization: $TOKEN" -T animation.gif https://image.zxilly.dev/falldown.gif
+          curl -H "Authorization: $TOKEN" -T falldown.webp https://image.zxilly.dev/falldown.webp
         env:
           TOKEN: ${{ secrets.TOKEN }}
           
