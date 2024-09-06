@@ -2,4 +2,4 @@
 
 > Generate with [animated-timeline](https://github.com/Zxilly/animated-timeline)
 
-![](https://github-readme-stats.vercel.app/api?username=Zxilly&count_private=true&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+![](https://github-readme-stats.vercel.app/api?username=Zxilly&count_private=true&bg_color=30,2E8B57,66CDAA&title_color=fff&text_color=fff)
